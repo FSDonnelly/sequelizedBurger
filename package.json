@@ -1,0 +1,26 @@
+{
+  "name": "sequelizedBurger",
+  "version": "1.0.0",
+  "description": "Burger 2: The Sequel",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/FSDonnelly/sequelizedBurger.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/FSDonnelly/sequelizedBurger/issues"
+  },
+  "homepage": "https://github.com/FSDonnelly/sequelizedBurger#readme",
+  "dependencies": {
+    "express": "^4.16.4",
+    "express-handlebars": "^3.0.0",
+    "mysql": "^2.16.0"
+  }
+}
