@@ -1,5 +1,5 @@
 var express = require("express");
-
+var db = require("./models");
 var PORT = process.env.PORT || 8000;
 var app = express();
 
@@ -19,6 +19,9 @@ var routes = require("./controllers/burgersController.js");
 
 app.use(routes);
 
-app.listen(PORT, function() {
-  console.log("Listening on port:%s", PORT);
+db.sequelize.sync().then(function () {
+  app.listen(PORT, function () {
+    console.log(`Running at http://localhost:${PORT}`);
+
+  });
 });
